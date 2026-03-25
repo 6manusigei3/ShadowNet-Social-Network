@@ -10,11 +10,8 @@ class FriendManager:
     def add_friend(self, user1, user2):
         self.graph.add_friend(user1, user2)
 
-    def remove_friend(self, user1, user2):
-        self.graph.remove_friend(user1, user2)
-
     def show_friends(self, user):
         return self.graph.get_friends(user)
 
-    def display_network(self):
+    def display(self):
         self.graph.display()
