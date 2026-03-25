@@ -1,12 +1,12 @@
-from structures.graph import Graph
+from system.friend_manager import FriendManager
 
-g = Graph()
+fm = FriendManager()
 
-g.add_user("Alice")
-g.add_user("Bob")
-g.add_user("Carol")
+fm.create_user("Alice")
+fm.create_user("Bob")
+fm.create_user("Carol")
 
-g.add_friend("Alice", "Bob")
-g.add_friend("Bob", "Carol")
+fm.add_friend("Alice", "Bob")
+fm.add_friend("Bob", "Carol")
 
-g.display()
+fm.display()
